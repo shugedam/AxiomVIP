@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Kite One' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/439a542074.js"></script>
+    <link rel="icon" href="./Image/Axiom_VIP_logo.png">   
+    <title>Certificate</title>
+
+    <style>
+        #completion{ font-family: 'Kite One';}
+      .hovern:hover {
+        background-color: #004080;
+       
+        color: #fcfcfc;
+        text-align: center;
+      }
+      .hovern.active {
+    background-color: #004080;
+    color: #fff;
+    text-align: center;
+}
+
+    </style>
+</head>
+<body>
+    <!-- Navbar Start -->
+    <div class="header">
+        <nav class="navbar position-fixed w-100 z-1" style="background-color: #004080;;">
+            <div class="container-fluid mx-2">
+              <button class="navbar-toggler me-5" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                    aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button> 
+                <a href="#">
+                    <i class="fa-solid fa-bell  float-end" style="color: #fcfcfc;"></i>
+                </a>  
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- sidebar of VIP -->
+<div class="container-fluid">
+    <div class="row flex-nowrap">
+        <div class="col-2 col-sm-3 col-md-3 shadow-lg  position-fixed  top-0 start-0 col-lg-2 px-sm-1  bg-light" >
+                <div class="d-flex flex-column mx-auto  align-items-sm-center  pt-2 text-dark min-vh-100">
+                    <!-- VIP Logo -->
+                    <a href="#" data-bs-toggle="collapse" class="nav-link px-0  align-middle mt-3 ">
+                        <img src="Image/Axiom_VIP_logo.png" class="mt-5 img-fluid" alt="Axiom VIP" width="80" height="50"></a>
+                    <!-- User Section -->
+                    <div class="mt-3">
+                        <img src="https://github.com/mdo.png" alt="Profile" width="50" height="50" class="rounded-circle  mx-sm-5">
+                        <a href="#" class="d-flex align-items-center text-primary text-decoration-none dropdown dropdown-toggle justify-content-center text-center my-3" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="d-none d-sm-inline">It's SK </span>
+                        </a>
+                        <hr style="color: #004080;">
+                        <!-- Dropdown for Profile Options -->
+                        <ul class="dropdown-menu dropdown-menu-light text-small  shadow">
+                            <li class="hovern" style="padding-left: 3px; padding-right: 3px;"><a style="color: #004080;" class="dropdown-item " href="#"> <i class="fa-solid fa-street-view"></i> View Profile</a></li>
+                            <li >
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li class="hovern" style="padding-left: 3px; padding-right: 3px;"><a style="color: #004080;" class="dropdown-item" href="#"> <i class="fa-solid fa-user-pen"></i> Edit Profile</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li class="hovern" style="padding-left: 3px; padding-right: 3px;"><a style="color: #004080;" class="dropdown-item" href="#"> <i class="fa-solid fa-right-from-bracket fa-rotate-180"></i> Log Out</a></li>
+                        </ul>
+                    </div>
+                
+                <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+                    <li class="nav-item  rounded-2 my-1 shadow-sm">
+                        <a href="#" class="nav-link hovern align-middle hovern" >
+                                <i class="fa-solid fa-house-chimney"></i> <span class="ms-1 d-none d-sm-inline">Home</span>
+                        </a>
+                    </li>
+                    <li class="w-100 rounded-2 my-1 shadow-sm">
+                        <a href="#submenu1" data-bs-toggle="collapse" class="nav-link hovern align-middle">
+                            <i class="fa-solid fa-magnifying-glass-chart"></i> <span class="ms-1  d-none d-sm-inline">Analyze</span> </a>
+                        <ul class="collapse flex-column ms-1 list-unstyled" id="submenu1" data-bs-parent="#menu">
+                            <li class="w-100  rounded-2 my-1 shadow-sm">
+                                <a href="#" class="nav-link  hovern px-0 hovern"> <i class="fa-solid fa-bars-progress hovern"></i> <span class="d-none d-sm-inline">Progress Report</span></a>
+                            </li>
+                            <li class="w-100  rounded-2 my-1 shadow-sm">
+                                <a href="#" class="nav-link hovern px-0 hovern"> <i class="fa-solid fa-flag hovern"></i> <span class="d-none d-sm-inline">Session Report</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="w-100  rounded-2 my-1 shadow-sm">
+                        <a href="#submenu2" data-bs-toggle="collapse" class="nav-link  hovern hovern align-middle ">
+                            <i class="fa-solid fa-table"></i> <span class="ms-1 d-none d-sm-inline">Technology</span></a>
+                        <ul class="collapse flex-column ms-1  list-unstyled" id="submenu2" data-bs-parent="#menu" style="max-height: 120px; overflow-y: scroll;">
+                            <li class="w-100  rounded-2 my-1 shadow-sm">
+                                <a href="#" class="nav-link hovern  px-0 hovern"> <span class="d-none hovern w-100 d-sm-inline">C</span></a>
+                            </li>
+                            <li  class="w-100  rounded-2 my-1 shadow-sm">
+                                <a href="#" class="nav-link px-0 hovern hovern"> <span class="d-none d-sm-inline">C++</span></a>
+                            </li>
+                            <li class="w-100  rounded-2 my-1 shadow-sm">
+                                <a href="#" class="nav-link px-0 hovern"> <span class="d-none d-sm-inline">HTML</span></a>
+                            </li>
+                            <li  class="w-100  rounded-2 my-1 shadow-sm">
+                                <a href="#" class="nav-link px-0 hovern"> <span class="d-none d-sm-inline">CSS</span></a>
+                            </li>
+                            <li  class="w-100  rounded-2 my-1 shadow-sm">
+                                <a href="#" class="nav-link px-0 hovern"> <span class="d-none d-sm-inline">C++</span></a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-link px-0 hovern"> <span class="d-none d-sm-inline">HTML</span></a>
+                            </li>
+                            <li  class="w-100  rounded-2 my-1 shadow-sm">
+                                <a href="#" class="nav-link px-0 hovern"> <span class="d-none d-sm-inline">CSS</span></a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-link px-0 hovern"> <span class="d-none d-sm-inline">C++</span></a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-link px-0 hovern"> <span class="d-none d-sm-inline">HTML</span></a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-link px-0 hovern"> <span class="d-none d-sm-inline">CSS</span></a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-link px-0 hovern"> <span class="d-none d-sm-inline">C++</span></a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-link px-0 hovern"> <span class="d-none d-sm-inline">HTML</span></a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-link px-0 hovern"> <span class="d-none d-sm-inline">CSS</span></a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-link px-0 hovern"> <span class="d-none d-sm-inline">C++</span></a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-link px-0 hovern"> <span class="d-none d-sm-inline">HTML</span></a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-link px-0 hovern"> <span class="d-none d-sm-inline">CSS</span></a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-link px-0 hovern"> <span class="d-none d-sm-inline">C++</span></a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-link px-0 hovern"> <span class="d-none d-sm-inline">HTML</span></a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-link px-0 hovern"> <span class="d-none d-sm-inline">CSS</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li  class="w-100  rounded-2 my-1 shadow-sm">
+                        <a href="#submenu3" data-bs-toggle="collapse" class=" nav-link  hovern align-middle">
+                            <i class="fa-solid fa-bookmark"></i> <span class="ms-1 d-none d-sm-inline">Acitvity</span> </a>
+                            <ul class="collapse flex-column ms-1 list-unstyled" id="submenu3" data-bs-parent="#menu">
+                            <li class="w-100  rounded-2 my-1 shadow-sm">
+                                <a href="#" class="nav-link px-0 hovern"> <i class="fa-solid fa-calendar-days"></i> <span class="d-none d-sm-inline">Calender</span></a>
+                            </li>
+                            <li  class="w-100  rounded-2 my-1 shadow-sm">
+                                <a href="#" class="nav-link px-0 hovern"> <i class="fa-solid fa-hand-sparkles"></i> <span class="d-none d-sm-inline">Events</span></a>
+                            </li>
+                            <li  class="w-100  rounded-2 my-1 shadow-sm">
+                                <a href="#" class="nav-link px-0 hovern"> <i class="fa-solid fa-file-lines"></i> <span class="d-none d-sm-inline">Skill Test</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                <hr>
+                <li class="nav-item  rounded-2 my-1 shadow-sm w-100">
+                    <a href="#" class="nav-link align-middle hovern ">
+                        <i class="fa-solid fa-right-from-bracket fa-rotate-180"></i> <span class="ms-1 d-none d-sm-inline">Log Out</span>
+                    </a>
+                </li>
+                
+                </div>
+        </div>
+
+        <!-- content of right side data -->
+        <div class="col-10 col-md-9  col-sm-9  ms-sm-auto  col-lg-10  px-md-4 py-3" style="background-image: url(/Image/Background_2.png); background-size: cover; background-repeat: no-repeat; margin-left: 70px;">
+            Content area...
+            <!-- Congratulation --> 
+            <div class="mt-5 pt-2">
+                <center>
+                    <h1 style="font-size: 60px ; font-family: 'Pacifico', cursive; text-shadow: 3.5px 5px  #c79900;color: #dfc400;">Congratulations</h1>
+                  </center>
+            </div>      
+            <!-- Certificate start -->
+        <div class="d-flex justify-content-center">    
+            <div class="mt-5 w-75 d-flex justify-content-center" style="border-color: #000000; border-width: 10px; border-style: solid; height: 500px;background-image: url(Image/Background\ _image.png);background-repeat: no-repeat;background-position: center; background-color: white;">
+                <div class="align-self-center" style=" height: 95%; width: 97%;border-radius: 30px;border-style: solid;border-color: #FE3E13;">     
+                    <div class="container">
+                        <div class="row">
+                             <div class="col-2"><img src="/Image/Axiom_Logo_Small-removebg-preview 1.png" class="m-4 col-2" style="width: 80%;" alt=""></div>
+                                <div class="col-10"><h3 class="col-10 fw-bold ms-5 mt-4" style="text-shadow: #e3e3e3 0px 10px 3px; color: #FE3E13;">AXIOM TECHGURU PVT. LTD.</h3>
+                                                        <h5 class="col-10 ms-5 ps-5" style="text-shadow: #e3e3e3 0px 10px 3px; font-weight: bold;">"IT Solutions,By IT Mastrters"</h5>
+                                <!--CIN Number-->          <p class="" style="font-weight: bold;color: #656565; font-size: small; margin-left: 130px;">CIN &nbsp;&nbsp;&nbsp;U72300MH2015PTC270316</p>
+                                                             <h3 class="mt-4 ms-4 col-12" style="color: #FE3E13;">Axiom’s Virtual Intership Program</h3>
+                                                                <p><span class="col-12 ms-5 ps-4" style="font-family: 'Brush Script MT', cursive;font-size: x-large;">This Certificate is Proudly Presented to</span><br><span class="ms-5 ps-5" style="font-weight: 600;font-size: x-large; font-family: inria Arial, Helvetica, sans-serif;color: #000000;">Mr.Atharva Deshpande</span><br><span class="text-justify ms-4 ps-3" style="font-size: 22px; color: #000000;" id="completion">for completion of skills test in Javascript</span></p>                           
+                                </div>
+                        </div> 
+                              <div>
+                <!-- Joining Date --> <div class="float-start">
+                                          <p class="ms-5 ps-3 fw-bold" style="font-size: 11px; color:#FE3E13 ;">Joining Date: 01/02/2023</p>
+                                           <div  class="image-stack__item image-stack__item--top ms-4 ps-5"><img src="Image/SushilSirSign (1) (1).png" class="img-fluid" style="width: 100px; height: 60px;" alt=""></div>
+                                            <p class="ms-5"><span class="ms-3">Mr.Sushil Pudke</span><br><span class="fw-bold ">Managing Director</span></p>
+                                      </div> 
+                      <!-- Issuing Date --> <div class="float-end">
+                                              <p class="ms-5 ps-2 fw-bold" style="font-size: 11px; color: #FE3E13;">Issue Date: 01/09/2023</p>
+                                               <div  class="image-stack__item image-stack__item--top ms-4 ps-5"><img src="Image/RahulSign.png" class="img-fluid" style="width: 100px; height: 60px;" alt=""></div>
+                                                <p class="me-3"><span class="ms-5 ps-4">Mr.Rahul Borkar</span><br><span class="fw-bold">Business Development Manager</span></p>       
+                                            </div>
+                              </div>        
+                   </div>   
+               </div>
+            </div>
+        </div> <!-- Certificate End -->
+            <br>
+            <div class="mb-5"><!-- Get Certificate Button -->
+              <center>
+                   <a href=""><button type="button" class="btn btn-lg" style="background-color: #004080; color: white;">Get Certificate</button></a>
+                    <br><br>
+                    <p class="fw-bold fs-5" style="color: #03AE00;">Your Certificate sent On Registered Email</p>
+              </center>
+            </div>
+</div>
+<!-- @endsection  Footer Area -->
+<div class="position-fixed w-100 fixed-bottom" style="background-color: #004080; text-align: center;height: 40px;padding-top: 8px; position: static;">
+    <p>
+      <a href="#"  style="text-underline-offset: none;color: #ffff;" >Developed by Axiom TechGuru Pvt. Ltd.</a>
+    </p>
+  </div>
+
+  <script>
+
+    
+    document
+      .querySelector('input[type="file"]')
+      .addEventListener("change", function () {
+        // Reset the file input to clear any selected file
+        this.value = "";
+      });
+  </script>
+    <script>
+       
+    
+      
+        // Get all elements with the "hovern" class
+const listItems = document.querySelectorAll(".hovern");
+
+// Add click event listeners to toggle the "active" class
+listItems.forEach(item => {
+    item.addEventListener("click", () => {
+        // Remove the "active" class from all items
+        listItems.forEach(li => {
+            li.classList.remove("active");
+        });
+
+        // Add the "active" class to the clicked item
+        item.classList.add("active");
+    });
+});
+
+    </script>
+    
+
+
+</body>
+</html>
